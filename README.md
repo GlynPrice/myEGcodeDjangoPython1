@@ -10,15 +10,22 @@ The Django-Python code is based on the tutorial and sample code on the www.docs.
 The specifications for this Django-Python code are:
 (a) one Model
     i.e one table in the database and one def routine in models.py
+    
 (b) no migration after the first migration
+
 (c) few simple views
+
 (d) based on the sqlite3 database (inherent in Python) and the basic web server (inherent in Django)
 
 The view-URLs for this code are:
 localhost:8000
+
 localhost:8000/admin
+
 localhost:8000/booksLib/latest
+
 localhost:8000/booksLib/time
+
 
 Note that the localhost:8000 view-URL is not the Django Welcome view or a crash/error_message, but uses either the view.py in the subfolder for either the Django project or the apps(booksLib) (to swoop need code change).
 
