@@ -1,0 +1,18 @@
+
+{% if latest_book_list %}
+    <!-- {{latest_book_list}} -->
+    <ul>
+    {% for b in latest_book_list %}
+        <!-- Using hardcoded URL in the tempate -->
+        <!-- <li><a href="/booksLib/">{{b.nameFld}}</a></li> -->
+        <!-- Removed hardcoded URL from the template -->
+        <!-- <li><a href="{% url 'latest_books' %}">{{ b.nameFld }}</a></li> -->
+        <!-- Namespacing used -->
+        <li><a href="{% url 'booksLib:latest_books' %}">{{ b.nameFld }}</a></li>
+        <!-- <li>'okay'</li> -->
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No BooksLib are available</p>
+    <p>List: {{latest_book_list}}</p>
+{% endif %}
