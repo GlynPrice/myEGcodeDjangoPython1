@@ -8,6 +8,7 @@ This simple example of Django-Python code was developed on a laptop running Ubun
 The Django-Python code is based on the tutorial and sample code on the www.docs.djangoproject(polls apps) website and the www.djangobook.com website.
 
 The specifications for this Django-Python code are:
+
 (a) one Model
     i.e one table in the database and one def routine in models.py
     
