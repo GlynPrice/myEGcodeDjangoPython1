@@ -19,6 +19,7 @@ The specifications for this Django-Python code are:
 (d) based on the sqlite3 database (inherent in Python) and the basic web server (inherent in Django)
 
 The view-URLs for this code are:
+
 localhost:8000
 
 localhost:8000/admin
