@@ -1,7 +1,7 @@
 myEGcodeDjangoPython1
 =====================
 
-My First Python-Django code  (Nov/Dec 2014)
+Nov/Dec 2014     My First Python-Django code
 
 This simple example of Django-Python code was developed on a laptop running Ubuntu 14.04 LTS installed alongside MS windows 7. Further, the Python (version 2.7.6) inherent in the Ubuntu system was used. A Python virtual environment was created and the Django software package version 1.7.1 was installed in this virtual environment.
 
