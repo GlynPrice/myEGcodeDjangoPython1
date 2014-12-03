@@ -14,10 +14,11 @@ class Migration(migrations.Migration):
             name='Book',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('nameFld', models.CharField(max_length=50)),
-                ('pubDateFld', models.DateField()),
-                ('namePubFld', models.CharField(max_length=50)),
-                ('interestingFld', models.CharField(max_length=50)),
+                ('nameB', models.CharField(max_length=50)),
+                ('datePubB', models.DateField()),
+                ('namePubB', models.CharField(max_length=50)),
+                ('commentB', models.CharField(max_length=50)),
+                ('idB', models.CharField(max_length=50)),
             ],
             options={
             },

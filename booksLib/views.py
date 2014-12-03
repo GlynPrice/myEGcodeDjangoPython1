@@ -44,10 +44,18 @@ def time_books(request):
 #A shortcut that loads a template, fills a context and returns a HttpResponse
 #object with the rendered template (common idiom)
 def latest_books(request):
-    latest_book_list = Book.objects.all().order_by('-pubDateFld')[:6]
+    latest_book_list = Book.objects.all().order_by('-datePubB')[:6]
+    num_polls1 = len(latest_book_list)                             #ggp1Dec2014
+    num_polls2 = len(latest_book_list.all())                       #ggp1Dec2014
+    num_polls3 = len(Book.objects.all())                           #ggp1Dec2014
+    print 'num_polls1= ', num_polls1, 'num_polls2= ', num_polls2, 'num_polls3= ', num_polls3   #ggp1Dec2014
+    #assert False, num_polls1                                                                   #ggp1Dec2014
+
     print "latest_book_list: ", latest_book_list
     print "latest_books(request): 001"
-    context = {'latest_book_list': latest_book_list}
+#   context = {'latest_book_list': latest_book_list}                                                      #ggp1Dec2014
+    context = {'latest_book_list': latest_book_list, 'num_polls1': num_polls1, 'num_polls3': num_polls3}  #ggp1Dec2014
     print "latest_books(request): 002"
+    print "Book.objects.all()= ", Book.objects.all()  #ggp1Dec2014
     return render(request, 'booksLib/latest_list.html', context)
 

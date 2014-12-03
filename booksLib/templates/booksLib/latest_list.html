@@ -1,6 +1,12 @@
-
+tst: top of latest_list.html       <!-- ggp 1Dec2014 -->
+</br>                              <!-- ggp 1Dec2014 -->
+</br>                              <!-- ggp 1Dec2014 -->
+There are {{num_polls1}} there out of a total of {{num_polls3}}    <!-- ggp 1Dec2014 -->
+</br>                              <!-- ggp 1Dec2014 -->
+</br>                              <!-- ggp 1Dec2014 -->
 {% if latest_book_list %}
     <!-- {{latest_book_list}} -->
+    The list of latest books are: <!-- ggp 1Dec2014 -->
     <ul>
     {% for b in latest_book_list %}
         <!-- Using hardcoded URL in the tempate -->
@@ -9,7 +15,7 @@
         <!-- <li><a href="{% url 'latest_ -->
         <!-- books' %}">{{ b.nameFld }}</a></li> -->
         <!-- Namespacing used -->
-        <li><a href="{% url 'booksLib:latest_books' %}">{{ b.nameFld }}</a></li>
+        <li><a href="{% url 'booksLib:latest_books' %}">{{ b.nameB }}</a></li>
         <!-- <li>'okay'</li> -->
     {% endfor %}
     </ul>

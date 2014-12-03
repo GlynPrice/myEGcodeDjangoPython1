@@ -6,13 +6,14 @@ from django.utils import timezone
 
 class Book(models.Model):
     #define fields for this model/table
-    nameFld = models.CharField(max_length=50)
-    pubDateFld = models.DateField()
-    namePubFld = models.CharField(max_length=50)
-    interestingFld = models.CharField(max_length=50)
+    nameB = models.CharField(max_length=50)
+    datePubB = models.DateField()
+    namePubB = models.CharField(max_length=50)
+    commentB = models.CharField(max_length=50)
+    idB = models.CharField(max_length=50)
     def __unicode__(self):                # __unicode__ on Python 2.7
         #sensible representation of the class/object
-        return self.nameFld
+        return self.nameB
     def pubDateDiffBol(self):
         #demonstration of a custom method
         tDelta = datetime.timedelta(days=1)
