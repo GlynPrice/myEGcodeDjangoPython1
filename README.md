@@ -33,3 +33,4 @@ Note that the localhost:8000 view-URL is not the Django Welcome view or a crash/
 
 The localhost:8000/admin view-URL is the Django admin login facility and the other two view-URL uses view.py in the apps(booksLib) subfolder.
 
+3 Dec 2014  Minor Changes to the Model/database
